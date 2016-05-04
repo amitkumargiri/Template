@@ -1,12 +1,5 @@
 package com.allyamit.model;
 
-import java.sql.Date;
-
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
-@Entity
-@Table(name="projects")
 public class Project {
 
 	private String projectid;

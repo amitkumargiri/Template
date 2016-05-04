@@ -24,7 +24,7 @@ CREATE TABLE `projects` (
   `name` varchar(100) NOT NULL,
   `startday` varchar(30) ,
   `endday` varchar(30),
-  `location` varchar()
+  `location` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

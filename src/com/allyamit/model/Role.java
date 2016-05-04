@@ -18,7 +18,6 @@ public class Role {
 	@Id
 	@GeneratedValue
 	private Integer id;
-	
 	private String role;
 	
 	@OneToMany(cascade=CascadeType.ALL)
