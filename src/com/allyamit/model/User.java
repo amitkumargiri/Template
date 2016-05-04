@@ -16,10 +16,9 @@ public class User {
 	@Id
 	@GeneratedValue
 	private Integer id;
-	
-	private String login;
-	
+	private String username;
 	private String password;
+	private String emailid;
 	
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinTable(name="user_roles",
@@ -36,12 +35,12 @@ public class User {
 		this.id = id;
 	}
 
-	public String getLogin() {
-		return login;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setLogin(String login) {
-		this.login = login;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getPassword() {
@@ -52,12 +51,19 @@ public class User {
 		this.password = password;
 	}
 
+	public String getEmailid() {
+		return emailid;
+	}
+
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
+	}
+
 	public Role getRole() {
 		return role;
 	}
 
 	public void setRole(Role role) {
 		this.role = role;
-	}	
-
+	}
 }
