@@ -57,7 +57,6 @@
 		</dependency>
 
 		<!-- Spring dependencies -->
-		<!-- SPRING -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>

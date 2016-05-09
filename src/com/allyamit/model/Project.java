@@ -1,7 +1,17 @@
 package com.allyamit.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table ( name = "projects" )
 public class Project {
 
+	@Id
+	@GeneratedValue
+	private Integer id;
 	private String projectid;
 	private String name;
 	private String startDay;

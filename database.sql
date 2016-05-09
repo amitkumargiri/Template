@@ -20,12 +20,13 @@ CREATE TABLE `user_roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `projects` (
-  `id` varchar(5) NOT NULL,
+  `id` int(3) NOT NULL,
+  `prjid` varchar(5) NOT NULL,
   `name` varchar(100) NOT NULL,
   `startday` varchar(30) ,
   `endday` varchar(30),
   `location` varchar(200) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`prjid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO roles (role) VALUES ('superuser'), ('manager'), ('employee'), ('customer');  
